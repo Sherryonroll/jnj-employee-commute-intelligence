@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 from config import (
-    SYNTHETIC_EMPLOYEES_FILE,
+    VALIDATED_EMPLOYEES_FILE,
     TRANSPORT_STATIONS_FILE,
     COMMUTE_FEATURES_FILE,
     WORKPLACE_LAT,
@@ -252,7 +252,7 @@ def calculate_commute_features(employees_df, stations_df):
 
 
 def main():
-    employees_df = pd.read_csv(SYNTHETIC_EMPLOYEES_FILE)
+    employees_df = pd.read_csv(VALIDATED_EMPLOYEES_FILE)
     stations_df = pd.read_csv(TRANSPORT_STATIONS_FILE)
 
     COMMUTE_FEATURES_FILE.parent.mkdir(parents=True, exist_ok=True)
