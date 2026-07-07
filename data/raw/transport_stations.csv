@@ -1,0 +1,23 @@
+station_name,area,lat,lon,mode,lines,connectivity_score
+Norderstedt Mitte,Norderstedt,53.708,9.9928,U-Bahn / AKN,"U1, A2",0.95
+Richtweg,Norderstedt,53.695,9.995,U-Bahn,U1,0.85
+Garstedt,Norderstedt,53.683,9.994,U-Bahn,U1,0.85
+Ochsenzoll,Hamburg-Langenhorn,53.677,10.001,U-Bahn,U1,0.8
+Langenhorn Markt,Hamburg-Langenhorn,53.649,10.017,U-Bahn,U1,0.8
+Ohlsdorf,Hamburg-Ohlsdorf,53.621,10.031,U-Bahn / S-Bahn,"U1, S1",0.95
+Barmbek,Hamburg-Barmbek,53.587,10.044,U-Bahn / S-Bahn,"U3, S1",0.9
+Kellinghusenstrasse,Hamburg-Eppendorf,53.588,9.99,U-Bahn,"U1, U3",0.9
+Hamburg Hbf,Hamburg-City,53.5527,10.0067,U-Bahn / S-Bahn / Regional,"U1, U2, U3, U4, S-Bahn, RE",1.0
+Jungfernstieg,Hamburg-City,53.552,9.994,U-Bahn / S-Bahn,"U1, U2, U4, S1, S3",0.95
+Dammtor,Hamburg-City,53.5608,9.9892,S-Bahn / Regional,"S-Bahn, RE",0.9
+Altona,Hamburg-Altona,53.552,9.935,S-Bahn / Regional,"S1, S2, S3, RE",0.95
+Wandsbek Markt,Hamburg-Wandsbek,53.572,10.067,U-Bahn / Bus,"U1, Bus",0.85
+Harburg,Hamburg-Harburg,53.456,9.991,S-Bahn / Regional,"S3, S5, RE",0.9
+Pinneberg,Pinneberg,53.654,9.797,S-Bahn / Regional,"S3, RE",0.8
+Quickborn,Quickborn,53.731,9.904,AKN,A1,0.7
+Henstedt-Ulzburg,Henstedt-Ulzburg,53.79,9.982,AKN,"A1, A2",0.7
+Kaltenkirchen,Kaltenkirchen,53.837,9.962,AKN,A1,0.65
+Elmshorn,Elmshorn,53.754,9.653,Regional,RE,0.7
+Ahrensburg,Ahrensburg,53.675,10.239,Regional,RE,0.75
+Bad Oldesloe,Bad Oldesloe,53.811,10.374,Regional,RE,0.65
+Lueneburg,Lueneburg,53.248,10.414,Regional,RE,0.7
