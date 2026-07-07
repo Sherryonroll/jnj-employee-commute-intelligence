@@ -34,8 +34,25 @@ COMMUTE_LABELS = ["0-30 min", "31-45 min", "46-60 min", "60+ min"]
 # Reliability / delay scenario
 DELAY_BUFFER_MIN = 15
 
-# Walking speed assumption
+# Walking and transfer assumptions
 WALKING_SPEED_KMH = 4.8
+TRANSFER_PENALTY_MIN = 5
+
+# First-mile public transport assumptions
+DIRECT_WALK_TO_MAJOR_STATION_KM = 1.5
+FEEDER_BUS_SPEED_KMH = 26
+LOCAL_ROUTE_FACTOR = 1.20
+
+# Local HVV access assumptions by area type.
+# These represent walking distance to the nearest practical public transport access point.
+AREA_ACCESS_PROFILES = {
+    "near_workplace": {"min_m": 120, "typical_m": 450, "max_m": 900, "local_wait_min": 5},
+    "urban": {"min_m": 150, "typical_m": 550, "max_m": 1100, "local_wait_min": 6},
+    "outer_urban": {"min_m": 250, "typical_m": 750, "max_m": 1400, "local_wait_min": 8},
+    "suburban": {"min_m": 300, "typical_m": 900, "max_m": 1700, "local_wait_min": 9},
+    "outer_suburban": {"min_m": 400, "typical_m": 1100, "max_m": 2200, "local_wait_min": 11},
+    "regional": {"min_m": 500, "typical_m": 1400, "max_m": 2800, "local_wait_min": 13},
+}
 
 # Public transport access thresholds
 STATION_ACCESS_THRESHOLDS_M = {
@@ -44,12 +61,9 @@ STATION_ACCESS_THRESHOLDS_M = {
     "acceptable": 1500,
 }
 
-# Transfer assumptions
-TRANSFER_PENALTY_MIN = 7
-
 # Output files
+TRANSPORT_STATIONS_FILE = RAW_DATA_DIR / "transport_stations.csv"
 SYNTHETIC_EMPLOYEES_FILE = SYNTHETIC_DATA_DIR / "synthetic_employees.csv"
 COMMUTE_FEATURES_FILE = PROCESSED_DATA_DIR / "employee_commute_features.csv"
 ADOPTION_OUTPUT_FILE = PROCESSED_DATA_DIR / "adoption_scoring_output.csv"
 POWERBI_OUTPUT_FILE = PROCESSED_DATA_DIR / "powerbi_dashboard_data.csv"
-TRANSPORT_STATIONS_FILE = RAW_DATA_DIR / "transport_stations.csv"

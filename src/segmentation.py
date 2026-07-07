@@ -18,12 +18,22 @@ FEATURE_COLUMNS = [
 def assign_segment_name(row):
     if row["adoption_score"] >= 80 and row["base_commute_time_min"] <= 45:
         return "High-potential PT users"
-    if row["delay_impact"] != "No impact":
-        return "Delay-sensitive commuters"
+
     if row["home_to_station_m"] > 1500:
         return "Poor station access commuters"
-    if row["base_commute_time_min"] > 60:
+
+    if row["crosses_45_min_after_delay"]:
+        return "Delay-sensitive commuters"
+
+    if row["base_commute_time_min"] <= 60 and row["delay_impact"] != "No impact":
+        return "Delay-sensitive commuters"
+
+    if row["base_commute_time_min"] <= 75 and row["adoption_score"] >= 55:
+        return "Moderate-potential commuters"
+
+    if row["base_commute_time_min"] > 75:
         return "Long commute commuters"
+
     return "Moderate-potential commuters"
 
 
