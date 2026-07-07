@@ -1,0 +1,6 @@
+factor,correlation_with_adoption_score
+base_commute_time_min,-0.831
+risk_adjusted_commute_time_min,-0.831
+number_of_transfers,-0.821
+nearest_public_transport_access_m,-0.802
+station_connectivity_score,0.553

@@ -1,0 +1,16 @@
+home_area,employees,avg_base_commute_min,avg_delay_adjusted_commute_min,avg_public_transport_access_m,avg_transfers,avg_adoption_score,high_or_very_high_potential
+Norderstedt,176,37.7,52.7,455.3,0.7,76.0,88.1
+Hamburg-Barmbek,64,61.3,76.3,583.2,0.8,63.3,50.0
+Hamburg-Wandsbek,98,70.6,85.6,590.0,1.0,62.5,42.9
+Hamburg-City,95,62.0,77.0,589.7,1.0,62.3,42.1
+Hamburg-Eimsbuettel,73,61.3,76.3,603.0,1.0,61.7,37.0
+Hamburg-Altona,81,63.4,78.4,597.0,1.5,58.8,13.6
+Quickborn,71,63.6,78.6,963.5,1.8,52.9,7.0
+Pinneberg,63,71.5,86.5,986.1,1.9,50.8,0.0
+Ahrensburg,53,76.8,91.8,1066.4,1.9,49.5,0.0
+Henstedt-Ulzburg,53,75.3,90.3,1131.4,1.9,49.1,1.9
+Kaltenkirchen,40,82.3,97.3,1258.8,1.8,47.7,2.5
+Hamburg-Harburg,55,91.1,106.1,843.9,2.9,47.6,0.0
+Elmshorn,42,95.7,110.7,1208.1,3.0,42.7,0.0
+Bad Oldesloe,13,103.9,118.9,1343.1,2.9,42.5,0.0
+Lueneburg,23,141.0,156.0,1485.3,2.8,40.9,0.0

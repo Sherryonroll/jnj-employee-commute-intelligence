@@ -1,0 +1,12 @@
+metric,value
+Total synthetic employees,1000.0
+Employees within 30 minutes,3.0
+Employees within 45 minutes,16.0
+Employees within 60 minutes,33.4
+Employees over 60 minutes,66.6
+High or very high adoption potential,31.4
+Delay-sensitive employees,33.4
+Employees crossing 45 minutes after delay,13.0
+Average base commute time,67.0
+Average delay-adjusted commute time,82.0
+Average adoption score,58.7
