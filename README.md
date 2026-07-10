@@ -1,41 +1,82 @@
-# J&J Employee Commute Intelligence
+# Employee Commute Intelligence & Deutschlandticket Adoption Analysis
 
-This project is a data science assessment solution for estimating public transport commute attractiveness and Deutschlandticket adoption potential for synthetic employees commuting to Johnson & Johnson Medical GmbH in Norderstedt.
+This repository contains a technical assessment project focused on analyzing employee commute accessibility, public transport convenience, and potential Deutschlandticket adoption for employees commuting to the Johnson & Johnson Medical GmbH site in Norderstedt, Germany.
+
+The project combines synthetic employee data generation, commute feature engineering, accessibility scoring, delay-risk analysis, segmentation, interactive mapping, and a two-page Power BI dashboard. The goal is to demonstrate how data science and analytics can support mobility planning, employee benefit decisions, and public transport adoption strategy.
+
+> Note: This project uses synthetic employee data only. No real employee data is included. The Johnson & Johnson logo is used only for technical assessment and dashboard demonstration purposes.
+
+---
+
+## Dashboard Preview
+
+### Commute Intelligence Overview
+
+![Commute Intelligence Overview](dashboard/screenshots/overview_dashboard.png)
+
+### Delay & Connectivity Risk
+
+![Delay and Connectivity Risk Dashboard](dashboard/screenshots/Delay Commute intelligence.png)
+
+---
 
 ## Project Objective
 
-The goal is to create a synthetic employee dataset, estimate door-to-door public transport commute times, assess commute convenience, and identify where the Deutschlandticket has strong adoption potential.
+The assessment task was approached as a complete end-to-end analytics solution:
 
-## Key Features
+- Generate a realistic synthetic employee commute dataset
+- Enrich employee records with commute and public transport accessibility features
+- Estimate commute convenience and Deutschlandticket adoption potential
+- Identify employees affected by delay and connectivity risks
+- Segment commuters into actionable groups
+- Build visual outputs for both technical and business users
+- Deliver an interactive Power BI dashboard and Folium map
 
-- Synthetic employee location generation
-- Public transport accessibility estimation
-- Door-to-door commute time calculation
-- Commute-time grouping
-- Delay sensitivity analysis using a 15-minute reliability buffer
-- Walking distance to nearest station
-- Number of transfers
-- Deutschlandticket adoption scoring
-- ML-based commuter segmentation
-- Interactive map visualization
-- Power BI-ready output dataset
+The final output is designed to be understandable for recruiters, technical reviewers, and business stakeholders.
 
-## Project Structure
+---
+
+## Technical Assessment Coverage
+
+| Requirement Area | Implementation |
+|---|---|
+| Synthetic employee data | Created 1,000 synthetic employee records across Hamburg, Norderstedt, and surrounding areas |
+| Commute analysis | Calculated base commute time, delay-adjusted commute time, and commute groups |
+| Public transport accessibility | Estimated nearest public transport access distance and transfer complexity |
+| Deutschlandticket adoption potential | Built an adoption scoring framework based on commute time, accessibility, transfers, and delay sensitivity |
+| Risk analysis | Added delay impact logic and 45-minute commute threshold analysis |
+| Segmentation | Classified employees into commuter segments such as high-potential PT users, delay-sensitive commuters, and poor-access commuters |
+| Dashboarding | Built a two-page Power BI dashboard for executive and analytical review |
+| Geospatial output | Created an interactive Folium map showing commute distribution and workplace context |
+| Reproducibility | Organized code into modular Python scripts and notebook workflow |
+
+---
+
+## Key Insights
+
+- Around one-third of employees show delay sensitivity based on the commute-risk model.
+- A meaningful share of employees cross the 45-minute commute threshold after simulated delay.
+- Station access distance and number of transfers are important barriers to public transport attractiveness.
+- High-potential public transport users can be identified using a combination of adoption score, commute time, and connectivity features.
+- The dashboard separates strategic overview from operational delay and connectivity risk, making the analysis easier to interpret.
+
+---
+
+## Methodology
+
+The workflow follows a structured analytics pipeline:
 
 ```text
-notebooks/          Main notebook for the assessment
-data/               Raw, synthetic, and processed datasets
-src/                Python source code modules
-outputs/            Charts, maps, and summary files
-dashboard/          Power BI dashboard files and screenshots
-```
-
-## Main Output
-
-The final solution will provide:
-
-- Percentage of employees within 30, 45, 60, and over 60 minutes
-- Estimated Deutschlandticket adoption potential
-- Areas with strong public transport connectivity
-- Areas where public transport is less attractive
-- Key factors influencing adoption
+Synthetic Employee Data
+        ↓
+Data Validation & Cleaning
+        ↓
+Commute Feature Engineering
+        ↓
+Public Transport Accessibility Analysis
+        ↓
+Adoption Scoring & Segmentation
+        ↓
+Risk Analysis
+        ↓
+Power BI Dashboard + Folium Map + Summary Outputs
